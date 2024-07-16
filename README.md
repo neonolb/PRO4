@@ -174,7 +174,7 @@ URL_BASE=/api
 
 ## Entregables
 
-Crea un repositorio en GitHub para este proyecto, con 2 carpetas para POO y PF.
+Crea un repositorio en GitHub para este proyecto
 
 
 - Archivo Readme.md
