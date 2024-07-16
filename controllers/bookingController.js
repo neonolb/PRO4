@@ -1,5 +1,9 @@
 //exports.findAll =(req, res)==> {
 
+
+
+
+
 const {booking} = require("../models/booking");
 const book5 = new booking(5, "Hotel Paraiso" ,5, "Chimuelo", "Martinez","suite","Reservado","25-07-2024", "27-07-2024", "2", "2", "4")
 const book6 = new booking(6,"Hotel Paraiso" ,6,"Juan","Secada","Matrimonial","Reservado","25-07-2024", "27-07-2024", "2", "0", "2")
@@ -62,7 +66,7 @@ const book8 = new booking(8,"Hotel Paraiso" ,8,"Macarena","Lopez","Suite","Tenta
         guest: '4',
         name: 'Diego',
         lastname: 'Perez',
-        Tipo_hab:'Suite',
+        Tipo_hab:'Double',
         Status:'Reservada',
         check_in: '10-10-2024',
         check_out: '12-10-2024',
@@ -75,14 +79,22 @@ const book8 = new booking(8,"Hotel Paraiso" ,8,"Macarena","Lopez","Suite","Tenta
 
     // Elementos CRUD
 
+
     exports.findAll =(req, res)=> {
         res.send ([book1,book2,book3,book4,book4,book6,book7,book8]);
-        };
+       };
     
+     
+
+
+
     exports.findOne  =(req, res)=> {
         console.log(req.params.id_R);
-        res.send(book1);
+        res.send(booking.id_R);
         };
+
+
+
 
     exports.create  =(req, res)=> {
         const b = {
@@ -116,7 +128,5 @@ const book8 = new booking(8,"Hotel Paraiso" ,8,"Macarena","Lopez","Suite","Tenta
             res.send('Reserva Eliminado: ${req.params.Id_R}');
             }
 
-        
-    
-        
+
   
