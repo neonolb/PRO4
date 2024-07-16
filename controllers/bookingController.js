@@ -1,8 +1,3 @@
-//exports.findAll =(req, res)==> {
-
-
-
-
 
 const {booking} = require("../models/booking");
 const book5 = new booking(5, "Hotel Paraiso" ,5, "Chimuelo", "Martinez","suite","Reservado","25-07-2024", "27-07-2024", "2", "2", "4")
@@ -85,15 +80,10 @@ const book8 = new booking(8,"Hotel Paraiso" ,8,"Macarena","Lopez","Suite","Tenta
        };
     
      
-
-
-
     exports.findOne  =(req, res)=> {
         console.log(req.params.id_R);
         res.send(booking.id_R);
         };
-
-
 
 
     exports.create  =(req, res)=> {
@@ -115,7 +105,7 @@ const book8 = new booking(8,"Hotel Paraiso" ,8,"Macarena","Lopez","Suite","Tenta
         }
 
     console.log('Reserva Guardado correctamente: ${b.Id_R}');
-    res.send('Reserva Guardado correctamente: ${b.Id_R}');
+    res.send('Reserva Guardado correctamente: ');
     }
        
     exports.update = (req,res) => {
